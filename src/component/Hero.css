@@ -1,0 +1,250 @@
+body {
+    background-color: black; /* Ensure the entire background is black */
+}
+
+.hero-background {
+    background: radial-gradient(circle at top, #256ef5, #000000 60%);
+    color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    min-height: 100vh; /* Apply to full page */
+}
+
+.glitch {
+    position: relative;
+    color: #fff;
+    font-size: inherit;
+    animation: glitch 1s infinite;
+    white-space: nowrap; /* Ensure text does not wrap */
+}
+
+.glitch::before,
+.glitch::after {
+    content: 'Tesla';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+}
+
+.glitch::before {
+    left: 2px;
+    text-shadow: -2px 0 red;
+    animation: glitch 1s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+    left: -2px;
+    text-shadow: -2px 0 blue;
+    animation: glitch 1s infinite linear alternate-reverse;
+}
+
+@keyframes glitch {
+    0% {
+        clip: rect(42px, 9999px, 44px, 0);
+    }
+    5% {
+        clip: rect(12px, 9999px, 14px, 0);
+    }
+    10% {
+        clip: rect(82px, 9999px, 84px, 0);
+    }
+    15% {
+        clip: rect(22px, 9999px, 24px, 0);
+    }
+    20% {
+        clip: rect(62px, 9999px, 64px, 0);
+    }
+    25% {
+        clip: rect(32px, 9999px, 34px, 0);
+    }
+    30% {
+        clip: rect(92px, 9999px, 94px, 0);
+    }
+    35% {
+        clip: rect(52px, 9999px, 54px, 0);
+    }
+    40% {
+        clip: rect(72px, 9999px, 74px, 0);
+    }
+    45% {
+        clip: rect(42px, 9999px, 44px, 0);
+    }
+    50% {
+        clip: rect(12px, 9999px, 14px, 0);
+    }
+    55% {
+        clip: rect(82px, 9999px, 84px, 0);
+    }
+    60% {
+        clip: rect(22px, 9999px, 24px, 0);
+    }
+    65% {
+        clip: rect(62px, 9999px, 64px, 0);
+    }
+    70% {
+        clip: rect(32px, 9999px, 34px, 0);
+    }
+    75% {
+        clip: rect(92px, 9999px, 94px, 0);
+    }
+    80% {
+        clip: rect(52px, 9999px, 54px, 0);
+    }
+    85% {
+        clip: rect(72px, 9999px, 74px, 0);
+    }
+    90% {
+        clip: rect(42px, 9999px, 44px, 0);
+    }
+    95% {
+        clip: rect(12px, 9999px, 14px, 0);
+    }
+    100% {
+        clip: rect(82px, 9999px, 84px, 0);
+    }
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 0; /* Add margin to create a gap */
+    color: white;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.stat-item:hover {
+    transform: scale(1.05);
+}
+
+.stat-item h2 {
+    font-size: 3rem;
+    margin: 0.5rem 0;
+}
+
+.stat-item p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.mission-container {
+    text-align: center;
+    margin: 2rem 0; /* Add margin to create a gap */
+}
+
+.mission-title {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.mission-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.mission-card {
+    background: black;
+    color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    width: 22%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    background: linear-gradient(45deg, rgba(37, 110, 245, 0.5), rgba(37, 110, 245, 0.1)); /* Permanent bluish gradient */
+}
+
+.mission-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    background: linear-gradient(45deg, rgba(37, 110, 245, 0.5), rgba(37, 110, 245, 0.1));
+    z-index: -1;
+    transition: opacity 0.3s;
+    opacity: 1; /* Permanent opacity */
+}
+
+.mission-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(37, 110, 245, 0.5);
+}
+
+.mission-icon {
+    color: #256ef5;
+    margin-bottom: 0.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mission-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.mission-card p {
+    font-size: 1rem;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center; /* Center video */
+    align-items: center;
+    margin: 2rem 0; /* Add margin to create a gap */
+    width: 100%; /* Spread video width to match overall website width */
+    position: relative; /* For positioning the mute button */
+}
+
+.tesla-video {
+    width: 100%;
+    max-width: 800px; /* Adjust width to fit on the left side */
+    height: auto; /* Adjust height to be responsive */
+    border-radius: 15px; /* Curve the edges of the video */
+    box-shadow: none; /* Remove box shadow to fuse with background */
+}
+
+.mute-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mute-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+    .tesla-video {
+        width: 100%; /* Full width for mobile view */
+        height: auto; /* Adjust height to be responsive */
+    }
+    .mission-card {
+        width: 100%; /* Full width for mobile view */
+    }
+}

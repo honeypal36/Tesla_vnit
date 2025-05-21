@@ -1,0 +1,20 @@
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with transparency */
+    color: white; /* White text */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 1rem;
+    border-radius: 15px; /* Curved corners */
+}
+
+.nav-link {
+    color: white;
+    transition: transform 0.2s;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+}
