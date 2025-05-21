@@ -73,7 +73,7 @@ function Hero() {
                     </p>
                 </div>
                 <div className="flex-1 flex justify-center mt-10 lg:mt-0">
-                    <img src="./src/assets/3d.gif" alt="3d" className="w-full h-auto max-w-7xl max-h-96" />
+                    <img src="/src/assets/3d.gif" alt="3d" className="w-full h-auto max-w-7xl max-h-96" />
                 </div>
             </div>
             <div className="stats-container flex justify-center mt-10" data-aos="fade-up">
