@@ -94,29 +94,29 @@ function Hero() {
                 <h2 className="mission-title font-extrabold text-blue-200 text-3xl">Our Mission</h2>
                 <div className="mission-cards">
                     <div className="mission-card">
-                        <img src="./src/assets/bolt.png" alt="Bolt Icon" className="mission-icon" />
+                        <img src="/assets/bolt.png" alt="Bolt Icon" className="mission-icon" />
                         <h3>Electrifying Innovation</h3>
                         <p>Tesla Club VNIT Nagpur sparks creativity and engineering excellence by driving innovation in electric mobility and sustainable technology. We empower students to design, build, and innovate through hands-on projects, workshops, and collaborations—fueling the future, one volt at a time.</p>
                     </div>
                     <div className="mission-card">
-                        <img src="./src/assets/speed.png" alt="Speed Icon" className="mission-icon" />
+                        <img src="/assets/speed.png" alt="Speed Icon" className="mission-icon" />
                         <h3>Speeding Towards Excellence</h3>
                         <p>We're on a mission to achieve excellence in Formula Student Electric racing, showcasing our cutting-edge designs on a global stage.</p>
                     </div>
                     <div className="mission-card">
-                        <img src="./src/assets/green.png" alt="Green Icon" className="mission-icon" />
+                        <img src="/assets/green.png" alt="Green Icon" className="mission-icon" />
                         <h3>Driving India's Green Revolution</h3>
                         <p>Tesla Club VNIT Nagpur is committed to advancing sustainable technology and clean energy solutions. Through innovative projects and awareness initiatives, we aim to inspire a new generation of engineers to lead India’s shift towards a greener, smarter future.</p>
                     </div>
                     <div className="mission-card">
-                        <img src="./src/assets/engineer.png" alt="Engineer Icon" className="mission-icon" />
+                        <img src="/assets/engineer.png" alt="Engineer Icon" className="mission-icon" />
                         <h3>Engineering the Future</h3>
                         <p>Tesla Club is where bold ideas meet cutting-edge tech. We innovate in electric mobility and clean energy, turning imagination into real-world solutions that shape tomorrow.</p>
                     </div>
                 </div>
             </div>
             <div className="video-container mt-10" data-aos="fade-up">
-                <video className="tesla-video rounded-2xl" ref={videoRef} src="./src/assets/video.mp4" autoPlay muted loop></video>
+                <video className="tesla-video rounded-2xl" ref={videoRef} src="/assets/video.mp4" autoPlay muted loop></video>
                 <button className="mute-button" onClick={toggleMute}>
                     {isMuted ? <FaVolumeMute /> : <FaVolumeUp />}
                 </button>
