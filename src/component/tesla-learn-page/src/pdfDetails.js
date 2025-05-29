@@ -1,7 +1,7 @@
 const pdfDetails = {
     "Motor Load Characteristic Curve": {
       link: "https://drive.google.com/file/d/1rLxdUtBIe-Q4aCLPRn6-KkPR1Eq4F98j/preview",
-      icon: "/component/tesla-learn-page/public/photos/Motor.png",
+      icon: "./component/tesla-learn-page/public/photos/Motor.png",
     },
     "Bearing Mechanics": {
       link: "https://drive.google.com/file/d/10pvsTeI1gR9ClPZnBqERRAnq62g2HeAm/preview",
