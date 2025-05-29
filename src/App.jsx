@@ -5,7 +5,7 @@ import Achieve from './component/Achieve'
 import Council from "./component/Council";
 import Projects from "./component/Projects";
 import Gallery from "./component/Gallery";
-import Learn from "./component/tesla-learn-page/src/App.jax";
+import Learn from "./component/tesla-learn-page/src/App.jsx";
 import Nav from './component/Nav'
 import Hero from './component/Hero'
 
