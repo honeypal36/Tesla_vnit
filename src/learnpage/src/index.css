@@ -1,0 +1,26 @@
+body{
+  background-color: #000000; 
+  color: white; 
+  font-family: 'Arial', sans-serif;
+  margin: 0; 
+  line-height: 1.6;   ;
+}
+
+.box{
+  border: 3px solid;
+  padding: 25px;
+  margin: 25px;
+  align-items: center;
+}
+.learn-section{
+  border: 3px solid;
+  padding: 25px;
+  margin: 25px;
+  align-items: center;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
