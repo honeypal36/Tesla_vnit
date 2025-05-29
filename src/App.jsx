@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'; 
 import Achieve from './component/Achieve'
 import Council from "./component/Council";
-import Projects from "./component/projects-page/src/App.jsx";
+import Projects from "./component/projests-page/src/App.jsx";
 import Gallery from "./component/Gallery";
 import Learn from "./component/tesla-learn-page/src/App.jsx";
 import Nav from './component/Nav'
