@@ -1,0 +1,68 @@
+/* src/components/ProjectDetail.css */  
+.project-detail-modal {  
+    position: fixed;  
+    top: 0;  
+    left: 0;  
+    right: 0;  
+    bottom: 0;  
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background for better contrast */  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    z-index: 1000;  
+  }  
+  
+  .modal-content {  
+    background-color: #ffffff; /* White background for text visibility */  
+    padding: 20px;  
+    border-radius: 8px;  
+    width: 90%; /* Increased width for better layout */  
+    max-width: 600px;  
+    position: relative;  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */  
+    color: #333; /* Dark text color */  
+  }  
+  
+  .close {  
+    position: absolute;  
+    top: 10px;  
+    right: 15px;  
+    cursor: pointer;  
+    font-size: 20px;  
+    color: #ba2828; /* Red color for close button */  
+  }  
+  
+  h2 {  
+    margin-bottom: 15px; /* Space below title */  
+    color: #007bff; /* Blue color for headings */  
+  }  
+  
+  h3 {  
+    margin-top: 20px; /* Space above subheadings */  
+    color: #0056b3; /* Darker blue for subheadings */  
+  }  
+  
+  .project-images {  
+    display: flex;  
+    flex-wrap: wrap;  
+    justify-content: space-around; /* Space around project images */  
+    margin-top: 15px; /* Space above images */  
+  }  
+  
+  .project-image {  
+    width: 250px; /* Adjusted size for clarity */  
+    height: auto; /* Maintain aspect ratio */  
+    margin: 5px; /* Space around images */  
+    border-radius: 5px; /* Rounded corners */  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */  
+  }
+  .team-modal, .project-detail-modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  

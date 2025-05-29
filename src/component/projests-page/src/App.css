@@ -1,0 +1,74 @@
+/* src/App.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0f0f0f;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+/* Card Animation and Glow */
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 25px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.02);
+  text-align: left;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+}
+
+.project-title {
+  font-size: 1.5rem;
+  color: #00ffff;
+  margin-bottom: 10px;
+}
+
+.project-desc {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  margin-bottom: 15px;
+}
+
+.tech-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tech-icons img {
+  height: 24px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s;
+}
+
+.tech-icons img:hover {
+  transform: scale(1.1);
+}

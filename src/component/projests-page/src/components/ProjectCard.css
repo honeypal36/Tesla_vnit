@@ -1,0 +1,117 @@
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 20px;
+  color: #fff;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+}
+
+.project-title {
+  font-size: 2rem;
+  color: #00ffff;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #cccccc;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.project-images {
+  overflow: hidden;
+  position: relative;
+  height: 220px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.project-image {
+  position: absolute;
+  transition: opacity 1s ease-in-out;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  border-radius: 15px;
+}
+
+.project-image.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.button {
+  flex: 1;
+  min-width: 140px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+
+.know-more {
+  background: linear-gradient(to right, #28a745, #218838);
+}
+
+.know-more:hover {
+  background: linear-gradient(to right, #218838, #28a745);
+}
+
+.meet-team {
+  background: linear-gradient(to right, #ffc107, #ff9800);
+  color: #222;
+}
+
+.meet-team:hover {
+  background: linear-gradient(to right, #ff9800, #ffc107);
+}
+
+@media (max-width: 768px) {
+  .project-images {
+    height: 220px; /* Slightly smaller for phones */
+  }
+
+  .project-title {
+    font-size: 1.5rem;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+  }
+
+  .button {
+    font-size: 0.85rem;
+    padding: 10px 16px;
+  }
+}
