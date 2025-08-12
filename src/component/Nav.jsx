@@ -48,7 +48,7 @@ function Nav() {
         <Link className='nav-link block md:inline py-2 md:py-0 font-mono' to='/Council'>Council</Link>
         <Link className='nav-link block md:inline py-2 md:py-0 font-mono' to='/Achieve'>Achievements</Link>
         <Link className='nav-link block md:inline py-2 md:py-0 font-mono' to='/Gallery'>Gallery</Link>
-        <Link className='nav-link block md:inline py-2 md:py-0 font-mono' to='/Learn'>Learn</Link>
+{/*         <Link className='nav-link block md:inline py-2 md:py-0 font-mono' to='/Learn'>Learn</Link> */}
       </div>
     </nav>
   );
