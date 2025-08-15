@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #0f0f0f;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #ffffff;
   overflow-x: hidden;
 }
@@ -11,15 +11,19 @@ body {
 .app-container {
   max-width: 1200px;
   margin: auto;
+  margin-top: 60px;
   padding: 60px 20px;
   text-align: center;
+}
+
+.app-container > h1 {
+  margin-bottom: 40px;
 }
 
 h1 {
   font-size: 3rem;
   font-weight: 600;
   color: #ffffff;
-  margin-bottom: 50px;
   position: relative;
 }
 
